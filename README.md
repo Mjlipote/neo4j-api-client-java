@@ -8,7 +8,7 @@ Neo4j API Client for Java.
 
 ```java
 Neo4jClientBuilder n4jcb =
-        new Neo4jClientBuilder.Builder(new URI("https://localhost:7474"), "neo4",
+        new Neo4jClientBuilder.Builder(new URI("https://localhost:7474"), "neo4j",
             "password").cypher("CREATE (p:Person {name:\"Alice\"}) RETURN p")
                 .execute();
 
